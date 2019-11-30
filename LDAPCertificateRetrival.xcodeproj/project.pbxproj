@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		B311D741239210FA00D7E545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B311D740239210FA00D7E545 /* ViewController.swift */; };
 		B311D743239210FC00D7E545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B311D742239210FC00D7E545 /* Assets.xcassets */; };
 		B311D746239210FC00D7E545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B311D744239210FC00D7E545 /* Main.storyboard */; };
+		B311D750239213A400D7E545 /* PerfectLDAP in Frameworks */ = {isa = PBXBuildFile; productRef = B311D74F239213A400D7E545 /* PerfectLDAP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B311D750239213A400D7E545 /* PerfectLDAP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,9 @@
 			dependencies = (
 			);
 			name = LDAPCertificateRetrival;
+			packageProductDependencies = (
+				B311D74F239213A400D7E545 /* PerfectLDAP */,
+			);
 			productName = LDAPCertificateRetrival;
 			productReference = B311D73B239210FA00D7E545 /* LDAPCertificateRetrival.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +112,9 @@
 				Base,
 			);
 			mainGroup = B311D732239210FA00D7E545;
+			packageReferences = (
+				B311D74E239213A400D7E545 /* XCRemoteSwiftPackageReference "Perfect-LDAP" */,
+			);
 			productRefGroup = B311D73C239210FA00D7E545 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -323,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B311D74E239213A400D7E545 /* XCRemoteSwiftPackageReference "Perfect-LDAP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PerfectlySoft/Perfect-LDAP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B311D74F239213A400D7E545 /* PerfectLDAP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B311D74E239213A400D7E545 /* XCRemoteSwiftPackageReference "Perfect-LDAP" */;
+			productName = PerfectLDAP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B311D733239210FA00D7E545 /* Project object */;
 }
